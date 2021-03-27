@@ -6,7 +6,6 @@ sudo ./configure && sudo make && sudo make install
 slowhttptest 
 ## for usage ##
 slowhttptest -H -u https://loadbal.sni.example.com
-slowhttptest -H -u http://loadbal.sni.example.com
 
 # SlowHTTPTest #
 
@@ -23,10 +22,15 @@ Latest official image is available at [Docker Hub](https://hub.docker.com/reposi
 `docker pull shekyan/slowhttptest:latest`
 
 ## command for help ##
+
 slowhttptest -h
+
 slowhttptest, a tool to test for slow HTTP DoS vulnerabilities - version 1.8.3
+
 Usage: slowhttptest [options ...]
+
 Test modes:
+
   -H               slow headers a.k.a. Slowloris (default)
   -B               slow body a.k.a R-U-Dead-Yet
   -R               range attack a.k.a Apache killer
