@@ -106,7 +106,6 @@ General options:
      at 10.10.0.1:8080 with 8000 connections, no statistics is generated, the rest test vaules
      are default.  Specifying another connection channel for probe connections helps to make sure
      that slowhttptest shows valid statistics for availability of server under test:
-
-           $ slowhttptest -e 10.10.0.1:8080 -c 8000 -X -u
-           https://host.example.com/resources/index.html
+ 
+ $ slowhttptest -e 10.10.0.1:8080 -c 8000 -X -u https://host.example.com/resources/index.html
 
