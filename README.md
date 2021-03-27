@@ -21,3 +21,24 @@ Check out [Wiki](https://github.com/shekyan/slowhttptest/wiki) for installation 
 
 Latest official image is available at [Docker Hub](https://hub.docker.com/repository/docker/shekyan/slowhttptest):
 `docker pull shekyan/slowhttptest:latest`
+
+## command for help ##
+slowhttptest -h
+slowhttptest, a tool to test for slow HTTP DoS vulnerabilities - version 1.8.3
+Usage: slowhttptest [options ...]
+Test modes:
+  -H               slow headers a.k.a. Slowloris (default)
+  -B               slow body a.k.a R-U-Dead-Yet
+  -R               range attack a.k.a Apache killer
+  -X               slow read a.k.a Slow Read
+Reporting options:
+  -g               generate statistics with socket state changes (off)
+  -o file_prefix   save statistics output in file.html and file.csv (-g required)
+  -v level         verbosity level 0-4: Fatal, Info, Error, Warning, Debug
+General options:
+  -c connections   target number of connections (50)
+  -i seconds       interval between followup data in seconds (10)
+  -l seconds       target test length in seconds (240)
+  -r rate          connections per seconds (50)
+  -s bytes         value of Content-Length header if needed (4096)
+  -t verb          verb to use in request, default to GET for
