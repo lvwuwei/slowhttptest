@@ -65,7 +65,7 @@ General options:
   
   -t verb          verb to use in request, default to GET for
   
-  EXAMPLES
+###  EXAMPLES
      Start a slowloris test of host.example.com with 1000 connections, statistics goes into
      my_header_stats, interval between follow up headers is 10 seconds and connection rate is 200
      connections per second:
