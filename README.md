@@ -70,7 +70,7 @@ General options:
      my_header_stats, interval between follow up headers is 10 seconds and connection rate is 200
      connections per second:
 
-           $ slowhttptest -c 1000 -H -g -o my_header_stats -i 10 -r 200 -t GET -u https://host.example.com/index.html -x 24 -p 3
+      $ slowhttptest -c 1000 -H -g -o my_header_stats -i 10 -r 200 -t GET -u https://host.example.com/index.html -x 24 -p 3
 
      Start slow POST test of host.example.com with 3000 connections, statistics goes into
      my_body_stats, interval between follow up headers is 110 seconds, connection rate is 200
@@ -78,14 +78,14 @@ General options:
      data is random value limited by 10 bytes and probe connections waits 3 seconds for HTTP
      response before marking server as DoSed:
 
-           $ slowhttptest -c 3000 -B -g -o my_body_stats -i 110 -r 200 -s 8192 -t FAKEVERB -u http://host.example.com/loginform.html -x 10 -p 3
+      $ slowhttptest -c 3000 -B -g -o my_body_stats -i 110 -r 200 -s 8192 -t FAKEVERB -u http://host.example.com/loginform.html -x 10 -p 3
 
      Start Range Header test of host.example.com with 1000 connections, use HEAD verb, and
      generate HTTP header Range:0-, x-1, x-2, x-3, ... x-y, where x is 10 and y is 3000,
      connection rate is 500: interval between follow up headers is 10 seconds and connection rate
      is 200 connections per second:
 
-           $ slowhttptest -R -u http://host.example.com/ -t HEAD -c 1000 -a 10 -b 3000 -r 500
+      $ slowhttptest -R -u http://host.example.com/ -t HEAD -c 1000 -a 10 -b 3000 -r 500
 
      Start Slow Read test of host.example.com with 8000 connections, no statistics is generated,
      connection rate is 200 connections per second, TCP advertised window size is a random value
@@ -93,7 +93,7 @@ General options:
      requests are pipelined per each connections, probe connection waits 3 seconds for HTTP
      response before marking server as DoSed:
 
-           $ slowhttptest -c 8000 -X -r 200 -w 512 -y 1024 -n 5 -z 32 -k 3 -u https://host.example.com/resources/index.html -p 3
+       $ slowhttptest -c 8000 -X -r 200 -w 512 -y 1024 -n 5 -z 32 -k 3 -u https://host.example.com/resources/index.html -p 3
 
      Start Slow Read test of host.example.com through HTTP proxy server at 10.10.0.1:8080 with
      8000 connections, no statistics is generated, the rest test vaules are default.
@@ -107,5 +107,5 @@ General options:
      are default.  Specifying another connection channel for probe connections helps to make sure
      that slowhttptest shows valid statistics for availability of server under test:
  
-          $ slowhttptest -e 10.10.0.1:8080 -c 8000 -X -u https://host.example.com/resources/index.html
+       $ slowhttptest -e 10.10.0.1:8080 -c 8000 -X -u https://host.example.com/resources/index.html
 
