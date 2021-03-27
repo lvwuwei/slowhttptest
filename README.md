@@ -6,8 +6,10 @@ sudo ./configure && sudo make && sudo make install
 slowhttptest 
 ## for usage ##
 slowhttptest -H -u https://loadbal.sni.example.com
+
 attention format like this 
-slowhttptest -H -u http://xxx.com -r 200 -l 99999 -c 65539
+
+slowhttptest -H -u http://www.xxxv.com -r 200 -l 99999 -c 65539
 
 # SlowHTTPTest #
 
