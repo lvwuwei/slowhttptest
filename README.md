@@ -100,12 +100,12 @@ General options:
      slowhttptest most likely would test HTTP proxy server itself, rather than target server, but
      it all depends on the HTTP proxy server implementation:
 
-           $ slowhttptest -d 10.10.0.1:8080 -c 8000 -X -u https://host.example.com/resources/index.html
+       $ slowhttptest -d 10.10.0.1:8080 -c 8000 -X -u https://host.example.com/resources/index.html
 
      Start Slow Read test of host.example.com and direct probe traffic through HTTP proxy server
      at 10.10.0.1:8080 with 8000 connections, no statistics is generated, the rest test vaules
      are default.  Specifying another connection channel for probe connections helps to make sure
      that slowhttptest shows valid statistics for availability of server under test:
  
- $ slowhttptest -e 10.10.0.1:8080 -c 8000 -X -u https://host.example.com/resources/index.html
+          $ slowhttptest -e 10.10.0.1:8080 -c 8000 -X -u https://host.example.com/resources/index.html
 
