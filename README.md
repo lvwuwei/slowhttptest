@@ -109,4 +109,4 @@ General options:
  
        $ slowhttptest -e 10.10.0.1:8080 -c 8000 -X -u https://host.example.com/resources/index.html
 
-powerfull  $ slowhttptest -d 2x.75.207.xx:80 -c 65539 -X -u http://www.hnyanling.gov.cn/index.html
+powerfull  $ slowhttptest -d 2x.75.207.xx:80 -c 65539 -X -u http://www.xxx.com/index.html
