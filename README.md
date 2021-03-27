@@ -70,7 +70,7 @@ General options:
      my_header_stats, interval between follow up headers is 10 seconds and connection rate is 200
      connections per second:
 
-      $ slowhttptest -c 1000 -H -g -o my_header_stats -i 10 -r 200 -t GET -u https://host.example.com/index.html -x 24 -p 3
+      $ slowhttptest -c 65539 -H -g -o my_header_stats -i 10 -r 200 -t GET -u https://host.example.com/index.html -x 24 -p 3 -l 99999
 
      Start slow POST test of host.example.com with 3000 connections, statistics goes into
      my_body_stats, interval between follow up headers is 110 seconds, connection rate is 200
